@@ -98,7 +98,7 @@ class Agent:
     @property
     def therock(self) -> Union[str, None]:
         if (self.gfx_version & 0xFFF0) == 0x1100:
-            return "gfx110X-dgpu"
+            return "gfx110X-all"
         if self.gfx_version == 0x1151:
             return "gfx1151"
         if (self.gfx_version & 0xFFF0) == 0x1200:
